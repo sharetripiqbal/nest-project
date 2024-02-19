@@ -6,10 +6,11 @@ import {
   Res,
   HttpStatus,
 } from '@nestjs/common';
-import { UsersService } from './users.service';
-import { CreateUserDto } from './dto/user.dto';
-import { FilterPropertiesPipe } from 'src/common/pipes/filter-properties.pipe';
 import { Response } from 'express';
+
+import { UsersService } from './users.service';
+import { CreateUserDto } from './dto/create-user.dto';
+import { FilterPropertiesPipe } from 'src/common/pipes/filter-properties.pipe';
 
 @Controller('/api/users')
 export class UsersController {
