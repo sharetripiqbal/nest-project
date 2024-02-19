@@ -1,6 +1,6 @@
 import { Controller, Post, Body, UsePipes } from '@nestjs/common';
 import { UsersService } from './users.service';
-import { CreateUserDto } from './user.dto';
+import { CreateUserDto } from './dto/user.dto';
 import { FilterPropertiesPipe } from 'src/common/pipes/filter-properties.pipe';
 
 @Controller('/api/users')
