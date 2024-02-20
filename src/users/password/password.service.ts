@@ -4,7 +4,7 @@ import * as bcrypt from 'bcrypt';
 @Injectable()
 export class PasswordService {
   async hashPassword(password: string): Promise<string> {
-    const saltOrRounds = 10; // You can adjust the number of rounds as needed
+    const saltOrRounds = 10;
     return await bcrypt.hash(password, saltOrRounds);
   }
 
